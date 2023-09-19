@@ -58,7 +58,9 @@
             <div class="d-flex gap-4 align-items-center">
                 @if(auth()->check())
                     @if(auth()->user()->role == 'user')
-                        <a href="{{ route('profile.index') }}" type="button" class="btn btn-warning btn-sm fw-bold text-white">{{ auth()->user()->name }}</a>
+                        <a href="{{ route('profile.index') }}" type="button" class="btn btn-warning btn-sm fw-bold text-mute">{{ auth()->user()->fish }}</a>
+                    @else
+                        <a href="{{ route('profile.index') }}" type="button" class="btn btn-warning btn-sm fw-bold text-mute">{{ auth()->user()->fish }}</a>
                     @endif
                 @else
                     <a href="{{ route('login') }}" class="text-decoration-none text-black fw-bold text-white">{{ __('home.login') }}</a>

@@ -30,43 +30,55 @@
                 <h2 class="fw-bold text-body">{{ __('home.experts') }}</h2>
                 <br><br>
             </div>
-             <div class="itc-slider" data-autoplay="false" data-interval="5000" data-loop="true" data-refresh="true"
-               data-slider="itc-slider">
-            <div class="itc-slider__wrapper">
-              <div class="itc-slider__items">
-                    @foreach($experts as $expert)
-                <div class="itc-slider__item"><!-- Начало 1 слайда -->
-                  <div class="card">
-                    <header class="card__header">
-                       <img class="card__img"  src="{{ asset('images/experts/' . $expert->image) }}" alt="..." />
-                      <span class="card__section">Совет эксперта</span>
-                    </header>
-                    <h2 class="card__title">{{ $expert->fio }}</h2>
-                    <footer class="card__footer">
-                      <img alt="" class="card__photo m-" src="{{ asset('images/experts/' . $expert->image) }}">
-                      <span class="card__author">{{ $expert->fio }}</span>
-                      <svg class="card__icon">
-                        <i class="bi bi-file-person"></i>
-                      </svg>
-                      <span class="card__views">{{ $expert->lavozim }}</span>
-                    </footer>
-                  </div>
-                </div> <!-- Конец 1 слайда -->
-                  @endforeach
-               
-    <ol class="itc-slider__indicators">
-      <li class="itc-slider__indicator" data-slide-to="0"></li>
-      <li class="itc-slider__indicator" data-slide-to="1"></li>
-      <li class="itc-slider__indicator" data-slide-to="2"></li>
-      <li class="itc-slider__indicator" data-slide-to="3"></li>
-      <li class="itc-slider__indicator" data-slide-to="4"></li>
-      <li class="itc-slider__indicator" data-slide-to="5"></li>
-      <li class="itc-slider__indicator" data-slide-to="6"></li>
-    </ol>
-  </div>
-      <button class="itc-slider__btn itc-slider__btn_prev"></button>
-      <button class="itc-slider__btn itc-slider__btn_next"></button>
+             
+          
+
+     <section>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <ul class="carousel__slides">
+                @foreach($experts as $expert)
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            @if($expert->image)
+                            <img src="{{ asset('images/experts/' . $expert->image) }}" alt="">
+                            @else
+                            <img src="{{ asset('images/experts/default-expert.png') }}" alt="">
+                            @endif
+                        </div>
+                        <figcaption>
+                            <h3 class="credit"><i class="bi bi-person"></i><br>{{ $expert->fio}}</h3>
+                            <h3 class="credit"><i class="bi bi-buildings"></i><br>{{ $expert->ishjoyi}}</h3>
+                            <h3 class="credit"><i class="bi bi-book"></i><br>{{ $expert->lavozim}}</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+               @endforeach
+            </ul>    
+            <ul class="carousel__thumbnails">
+                @foreach($experts as $expert)
+                <li>
+                    <label for="slide-{{ $expert->id}}">@if($expert->image)
+                            <img src="{{ asset('images/experts/' . $expert->image) }}" alt="">
+                            @else
+                            <img src="{{ asset('images/experts/default-expert.png') }}" alt="">
+                            @endif
+                    </label>
+                </li>
+               @endforeach
+
+            </ul>
+
+        </div>
     </div>
+</section>
            
         </div>
     </section>
