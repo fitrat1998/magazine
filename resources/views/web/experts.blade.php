@@ -36,12 +36,10 @@
      <section>
     <div class="container">
         <div class="carousel">
-            <input type="radio" name="slides" checked="checked" id="slide-1">
-            <input type="radio" name="slides" id="slide-2">
-            <input type="radio" name="slides" id="slide-3">
-            <input type="radio" name="slides" id="slide-4">
-            <input type="radio" name="slides" id="slide-5">
-            <input type="radio" name="slides" id="slide-6">
+            @foreach($experts as $expert)
+            <input type="radio" name="slides" checked="checked" id="slide-{{ $expert->id}}">
+            <!-- <input type="radio" name="slides" id="{{ $expert->id}}"> -->
+            @endforeach
             <ul class="carousel__slides">
                 @foreach($experts as $expert)
                 <li class="carousel__slide">

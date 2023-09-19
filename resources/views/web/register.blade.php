@@ -12,7 +12,7 @@
             <!-- Login -->
             <div id="login">
                 <div class="m-auto bg-white shadow-sm p-5 rounded-3 text-center col-md-4 mx-auto">
-                    <h3 class="fw-bold text-black mb-2">{{ __('home.register') }}</h3>
+                    <h3 class="fw-bold text-success mb-2">{{ __('home.register') }}</h3>
                     <form action="{{ route('register') }}"  method="POST" class="text-start pt-4">
                         @csrf
                         <div class="mb-3">
@@ -29,7 +29,7 @@
                             <input type="password" name="password" class="form-control" id="password" placeholder="********">
                         </div>
 
-                        <button type="submit" class="btn btn-dark fw-bold fs-7 rounded-3 shadow-sm w-100 border-0 px-4 py-3 text-uppercase">{{ __('home.register') }}</button>
+                        <button type="submit" class="btn btn-success fw-bold fs-7 rounded-3 shadow-sm w-100 border-0 px-4 py-3 text-uppercase">{{ __('home.register') }}</button>
                     </form>
 
                     <p class="text-muted mb-0">{{ __('home.ask_login') }} <a href="{{ route('login') }}" class="text-success">{{ __('home.login') }}</a></p>
