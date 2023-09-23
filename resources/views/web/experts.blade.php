@@ -46,9 +46,9 @@
                     <figure>
                         <div>
                             @if($expert->image)
-                            <img src="{{ asset('images/experts/' . $expert->image) }}" alt="">
+                            <img class="" src="{{ asset('images/experts/' . $expert->image) }}" alt="">
                             @else
-                            <img src="{{ asset('images/experts/default-expert.png') }}" alt="">
+                            <img class="" src="{{ asset('images/experts/default-expert.png') }}" alt="">
                             @endif
                         </div>
                         <figcaption>
