@@ -84,10 +84,10 @@
 @endif
 
 <script>
-    window.replainSettings = { id: '91cd1b36-9657-4834-934b-62b3d97bcacc' };
-    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
-        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-    })('https://widget.replain.cc/dist/client.js');
+window.replainSettings = { id: '915c56f5-64b0-4ef9-a7b1-f80576034607' };
+(function(u){var s=document.createElement('script');s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
 </script>
 
 @stack('page_js')
