@@ -30,56 +30,94 @@
                 <h2 class="fw-bold text-body">{{ __('home.experts') }}</h2>
                 <br><br>
             </div>
-             
+     </section>
+
+  <section class="text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-12 col-md-6 ">
+
+
+        <div class="row m-5">
+         @foreach($experts as $expert)
+            @if($expert->lavozim == "Bosh muharrir")
+                <div class="col-md-6">
+                  <div class="card shadow-sm h-100">
+                     @if($expert->image)
+                        <img class="" src="{{ asset('images/experts/' . $expert->image) }}" alt="">
+                        @else
+                        <img class="" src="{{ asset('images/experts/default-expert.png') }}" alt="">
+                    @endif
+                    <div class="card-body">
+                      <p class="card-text">{{ $expert->fio}}</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <!-- <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                        </div> -->
+                        <small class="text-body-secondary text-center">{{$expert->lavozim}}</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            @endif
+
+            @if($expert->lavozim == "Bosh muharrir oʻrinbosari")
+                <div class="col-md-6">
+                  <div class="card shadow-sm h-100">
+                     @if($expert->image)
+                        <img class="" src="{{ asset('images/experts/' . $expert->image) }}" alt="">
+                        @else
+                        <img class="" src="{{ asset('images/experts/default-expert.png') }}" alt="">
+                    @endif
+                    <div class="card-body">
+                      <p class="card-text">{{ $expert->fio}}</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <!-- <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                        </div> -->
+                        <small class="text-body-secondary text-center">{{ $expert->lavozim}}</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            @endif
+
+             @endforeach
           
-
-     <section>
-    <div class="container">
-        <div class="carousel">
-            @foreach($experts as $expert)
-            <input type="radio" name="slides" checked="checked" id="slide-{{ $expert->id}}">
-            <!-- <input type="radio" name="slides" id="{{ $expert->id}}"> -->
-            @endforeach
-            <ul class="carousel__slides">
-                @foreach($experts as $expert)
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            @if($expert->image)
-                            <img class="" src="{{ asset('images/experts/' . $expert->image) }}" alt="">
-                            @else
-                            <img class="" src="{{ asset('images/experts/default-expert.png') }}" alt="">
-                            @endif
-                        </div>
-                        <figcaption>
-                            <h3 class="credit"><i class="bi bi-person"></i><br>{{ $expert->fio}}</h3>
-                            <h3 class="credit"><i class="bi bi-buildings"></i><br>{{ $expert->ishjoyi}}</h3>
-                            <h3 class="credit"><i class="bi bi-book"></i><br>{{ $expert->lavozim}}</h3>
-                        </figcaption>
-                    </figure>
-                </li>
-               @endforeach
-            </ul>    
-            <ul class="carousel__thumbnails">
-                @foreach($experts as $expert)
-                <li>
-                    <label for="slide-{{ $expert->id}}">@if($expert->image)
-                            <img src="{{ asset('images/experts/' . $expert->image) }}" alt="">
-                            @else
-                            <img src="{{ asset('images/experts/default-expert.png') }}" alt="">
-                            @endif
-                    </label>
-                </li>
-               @endforeach
-
-            </ul>
-
-        </div>
+            
+      </div>
     </div>
-</section>
-           
-        </div>
-    </section>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                @foreach($experts as $expert)
+                  @if($expert->lavozim != "Bosh muharrir" && $expert->lavozim != "Bosh muharrir oʻrinbosari")
+                    <div class="col">
+                      <div class="card shadow-sm h-100">
+                        @if($expert->image)
+                        <img class="" src="{{ asset('images/experts/' . $expert->image) }}" alt="">
+                        @else
+                        <img class="" src="{{ asset('images/experts/default-expert.png') }}" alt="">
+                        @endif
+                        <div class="card-body">
+                          <p class="card-text">{{$expert->fio}}</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            
+                            <small class="text-body-secondary text-center">{{$expert->lavozim}}</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   @endif
+                @endforeach 
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
 
 @endsection
 <!-- <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
