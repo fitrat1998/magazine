@@ -9,9 +9,23 @@ use App\Models\Issue;
 use App\Models\News;
 use App\Models\User;
 use App\Models\Year;
+use App\Mail\MailSend;
+use Illuminate\Support\Facades\Mail;
 
 class SiteController extends Controller
 {
+    public function mailSend()
+    {
+        $mailData = [
+            'title' => 'Mail from ItSolutionStuff.com',
+            'body' => 'This is for testing email using smtp.'
+        ];
+
+         
+        Mail::to('obloqulovshoyim1@gmail.com')->send(new MailSend($mailData));
+
+        dd("Email is sent successfully.");
+    }
     public function index(){
         $journals = Issue::leftJoin('years', function ($join){
             $join->on('years.id', '=', 'issues.year_id');

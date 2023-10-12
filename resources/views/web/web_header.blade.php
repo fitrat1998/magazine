@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light btn-success shadow-sm p-0 main-header-nav " id="nav-bar">
     <div class="container">
-        <a href="{{ route('index') }}" class="brand d-flex align-items-center mb-0 text-decoration-none me-5 bg-warning m-2 mb-2 border rounded p-2">
+        <a href="{{ route('index') }}" class="brand d-flex align-items-center mb-0 text-decoration-none me-5 bg-white m-2 mb-2 border rounded p-2">
             <img src="{{ asset('assets/img/' . __('home.logo')) }}" class="img-fluid" alt="Turkologiya" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

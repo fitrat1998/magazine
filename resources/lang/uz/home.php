@@ -26,7 +26,7 @@ return [
     'counter_4' => "Foydalanuvchilar",
     'phone' => "Telefon",
     'email' => "Email",
-    'adress' => "Manzil: Universitet xiyoboni 15-uy",
+    'adress' => "Manzil: Samarqand shahri Universitet xiyoboni 15-uy ",
     'logo' => "logo_uz.png",
     'menus' => "Menyular",
     'auth' => "Avtorizatsiya",
@@ -47,5 +47,19 @@ return [
     'otp' => "Emailingizga 6 xonali kod jo'natildi, Iltimos agar kod bormasa spam qutisini ham tekshiring!",
     'otp_t' => "6 xonali kodni kiriting.",
     'abstract' => "Annotatsiya",
+    'position' => "Bosh muharrir",
+    'position2' => "Bosh muharrir oʻrinbosari",
+    'p1' => "t.f.d., professor",
+    'p2' => "f-m.f.d., professor",
+    'p3' => "f.f.d., professor ",
+    'p4' => "f.f.n., professor ",
+    'p5' => "t.f.n., dotsent ",
+    'p6' => "dotsent",
+    'p7' => "Mas’ul muharrir:",
+    'p8' => "Texnik xodim:",
+    
+    'country_en' => "(Uzbekistan)",
+    'country_tr' => "(Özbekistan)",
+    'country_uz' => "(O'zbekistan)",
 
 ];

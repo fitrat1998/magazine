@@ -29,4 +29,18 @@ return[
 
     'journal_archive' => "Archives of journals",
 
+     'about3_link' => "Website link: https://turkologiya.samdu.uz/",
+        
+    'about3_called' => "Title: “Turkological research” International scientific journal ",
+
+    'about3_lang' => "Languages: Uzbek, English, Turkish",
+
+    'about3_org' => "Founder: Samarkand State University named after Sharof Rashidov",
+
+    'about3_num' => "Edition year: 2023",
+
+    'about3_count' => "Duration: 4 issues per year",
+
+    'about3_desc' => "Specialization (areas): Turkic languages, History of Socio-Cultural Relations of the Turkic Peoples, Turkic World Studies, Dialectology, Folklore Studies, Comparative Linguistics and Literary Studies, Literary Relations and Translation Studies",
+
 ];

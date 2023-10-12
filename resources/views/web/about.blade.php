@@ -38,6 +38,44 @@
     </header>
 
     <!-- About section one-->
+     <section class="py-5 bg-white" id="scroll-target">
+        <div class="container my-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6"><img class="img-fluid w-100 rounded-3 mb-5 mb-lg-0" src="{{ asset('images/site/guvohnoma.jpg') }}" alt="..." width="400" /></div>
+                <div class="col-lg-6"><img class="img-fluid w-100 rounded-3 mb-5 mb-lg-0" src="{{ asset('images/site/davom.jpg') }}" alt="..." width="400" /></div>
+                <div class="col-lg-8">
+                    <p class="lead fw-normal text-muted mb-0 p-2">
+                        <a href="{{ __('about.about3_link') }}">{{ __('about.about3_link') }}</a> 
+                    </p>
+
+                    <p class="lead fw-normal text-muted mb-0 p-2">
+                        {{ __('about.about3_called') }} 
+                    </p>
+
+                    <p class="lead fw-normal text-muted mb-0 p-2">
+                        {{ __('about.about3_lang') }} 
+                    </p>
+
+                    <p class="lead fw-normal text-muted mb-0 p-2">
+                        {{ __('about.about3_org') }} 
+                    </p>
+
+                    <p class="lead fw-normal text-muted mb-0 p-2">
+                        {{ __('about.about3_num') }} 
+                    </p>
+
+                    <p class="lead fw-normal text-muted mb-0 p-2">
+                        {{ __('about.about3_count') }} 
+                    </p>
+
+                    <p class="lead fw-normal text-muted mb-0 p-2">
+                        {{ __('about.about3_desc') }} 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section one-->
     <section class="py-5 bg-white" id="scroll-target">
         <div class="container my-5">
             <div class="row gx-5 align-items-center">
@@ -62,7 +100,7 @@
     <section class="py-5 bg-light">
         <div class="container my-5">
             <div class="row gx-5 align-items-center">
-                <div class="col-lg-4 order-first order-lg-last"><img class="img-fluid rounded-3 mb-5 mb-lg-0" src="{{ asset('images/site/guvohnoma.jpg') }}" alt="..." /></div>
+                <div class="col-lg-4 order-first order-lg-last"><img class="img-fluid rounded-3 mb-5 mb-lg-0" src="{{ asset('images/site/qaror.jpg') }}" alt="..." /></div>
                 <div class="col-lg-8">
                     <h2 class="fw-bold mb-3 text-body">{{ __('about.about_2') }}</h2>
                     <p class="lead fw-normal text-muted mb-0">

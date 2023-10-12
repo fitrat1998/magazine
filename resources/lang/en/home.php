@@ -47,5 +47,18 @@ return [
     'otp' => "A 6-digit code has been sent to your email. Please check your spam folder if you have not received the code",
     'otp_t' => "Enter the 6-digit code.",
     'abstract' => "Abstract",
+    'position' => "Chief Editor:",
+    'position2' => "Deputy Chief Editor:",
+    'p1' => "Doc. of technic. scien., Professor",
+    'p2' => "Doc. of physic. and mathematic. scien., Professor",
+    'p3' => "Doc. of philol. scien., Professor",
+    'p4' => "Candi. of philol. scien., Professor",
+    'p5' => "– Candi. of hist. scien., Associate Professor",
+    'p6' => "Associate Professor",
+    'p7' => "Managing editor:",
+    'p8' => "Technical worker:",
+    'country_en' => "(Uzbekistan)",
+    'country_tr' => "(Özbekistan)",
+    'country_uz' => "(O'zbekistan)",
 
 ];

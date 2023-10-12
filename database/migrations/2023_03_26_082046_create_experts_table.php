@@ -17,8 +17,11 @@ class CreateExpertsTable extends Migration
             $table->id();
             $table->string('image');
             $table->string('fio');
-            $table->string('lavozim');
-            $table->string('ishjoyi');
+            $table->string('fio_tr');
+            $table->string('fio_en');
+            $table->string('malumot_uz');
+            $table->string('malumot_tr');
+            $table->string('malumot_en');
             $table->timestamps();
         });
     }

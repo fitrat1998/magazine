@@ -39,7 +39,7 @@
 
         <div class="row m-5">
          @foreach($experts as $expert)
-            @if($expert->lavozim == "Bosh muharrir")
+            @if($expert->fio == "Bosh muharrir: Juliboy ELTAZAROV")
                 <div class="col-md-6">
                   <div class="card shadow-sm h-100">
                      @if($expert->image)
@@ -48,20 +48,36 @@
                         <img class="" src="{{ asset('images/experts/default-expert.png') }}" alt="">
                     @endif
                     <div class="card-body">
-                      <p class="card-text">{{ $expert->fio}}</p>
+                        
+                        @if(__('home.home') == "Bosh sahifa")
+                                <p class="card-text">{{ $expert->fio }}</p>
+                        @elseif(__('home.home') == "Ana sayfa")
+                            <p class="card-text">{{ $expert->fio_tr }}</p>
+                        @elseif(__('home.home') == "Home")
+                            <p class="card-text">{{ $expert->fio_en }}</p>
+                        @endif
                       <div class="d-flex justify-content-between align-items-center">
-                        <!-- <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
-                        </div> -->
-                        <small class="text-body-secondary text-center">{{$expert->lavozim}}</small>
+                        
+                        @if(__('home.home') == "Bosh sahifa")
+                            <small class="text-body-secondary text-center">
+                                {{ $expert->malumot_uz }}
+                            </small>
+                        @elseif(__('home.home') == "Ana sayfa")
+                            <small class="text-body-secondary text-center">
+                                {{ $expert->malumot_tr }}
+                            </small>
+                        @elseif(__('home.home') == "Home")
+                            <small class="text-body-secondary text-center">
+                                {{ $expert->malumot_en }}
+                            </small>
+                        @endif
                       </div>
                     </div>
                   </div>
                 </div>
             @endif
 
-            @if($expert->lavozim == "Bosh muharrir oʻrinbosari")
+            @if($expert->fio == "Bosh muharrir o‘rinbosari: Roxila RUZMANOVA")
                 <div class="col-md-6">
                   <div class="card shadow-sm h-100">
                      @if($expert->image)
@@ -70,13 +86,31 @@
                         <img class="" src="{{ asset('images/experts/default-expert.png') }}" alt="">
                     @endif
                     <div class="card-body">
-                      <p class="card-text">{{ $expert->fio}}</p>
+                        @if(__('home.home') == "Bosh sahifa")
+                            <p class="card-text">{{ $expert->fio }}</p>
+                        @elseif(__('home.home') == "Ana sayfa")
+                            <p class="card-text">{{ $expert->fio_tr }}</p>
+                        @elseif(__('home.home') == "Home")
+                            <p class="card-text">{{ $expert->fio_en }}</p>
+                        @endif
                       <div class="d-flex justify-content-between align-items-center">
                         <!-- <div class="btn-group">
                           <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
                           <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
                         </div> -->
-                        <small class="text-body-secondary text-center">{{ $expert->lavozim}}</small>
+                        @if(__('home.home') == "Bosh sahifa")
+                            <small class="text-body-secondary text-center">
+                                {{ $expert->malumot_uz }}
+                            </small>
+                        @elseif(__('home.home') == "Ana sayfa")
+                            <small class="text-body-secondary text-center">
+                                {{ $expert->malumot_tr }}
+                            </small>
+                        @elseif(__('home.home') == "Home")
+                            <small class="text-body-secondary text-center">
+                                {{ $expert->malumot_en }}
+                            </small>
+                        @endif
                       </div>
                     </div>
                   </div>
@@ -94,7 +128,7 @@
     <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 @foreach($experts as $expert)
-                  @if($expert->lavozim != "Bosh muharrir" && $expert->lavozim != "Bosh muharrir oʻrinbosari")
+                  @if("Bosh muharrir o‘rinbosari: Roxila RUZMANOVA" != $expert->fio && "Bosh muharrir: Juliboy ELTAZAROV" != $expert->fio)
                     <div class="col">
                       <div class="card shadow-sm h-100">
                         @if($expert->image)
@@ -103,10 +137,27 @@
                         <img class="" src="{{ asset('images/experts/default-expert.png') }}" alt="">
                         @endif
                         <div class="card-body">
-                          <p class="card-text">{{$expert->fio}}</p>
+                            @if(__('home.home') == "Bosh sahifa")
+                                <p class="card-text">{{ $expert->fio }}</p>
+                            @elseif(__('home.home') == "Ana sayfa")
+                                <p class="card-text">{{ $expert->fio_tr }}</p>
+                            @elseif(__('home.home') == "Home")
+                                <p class="card-text">{{ $expert->fio_en }}</p>
+                            @endif
                           <div class="d-flex justify-content-between align-items-center">
-                            
-                            <small class="text-body-secondary text-center">{{$expert->lavozim}}</small>
+                            @if(__('home.home') == "Bosh sahifa")
+                                <small class="text-body-secondary text-center">
+                                    {{ $expert->malumot_uz }}
+                                </small>
+                            @elseif(__('home.home') == "Ana sayfa")
+                                <small class="text-body-secondary text-center">
+                                    {{ $expert->malumot_tr }}
+                                </small>
+                            @elseif(__('home.home') == "Home")
+                                <small class="text-body-secondary text-center">
+                                    {{ $expert->malumot_en }}
+                                </small>
+                            @endif
                           </div>
                         </div>
                       </div>

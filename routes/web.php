@@ -27,6 +27,7 @@ use Illuminate\Support\Facades\Route;
 */
 // salom
 Route::get('/', [SiteController::class, 'index'])->name('index');
+Route::get('/mail/send', [SiteController::class, 'mailSend']);
 
 Route::get('/login', [AuthController::class, 'index'])->name('login.index');
 Route::post('/login', [AuthController::class, 'login'])->name('login');

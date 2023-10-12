@@ -69,6 +69,7 @@ class AuthController extends Controller
         session()->put('otp_email', $user['email']);
 
         $obj = new Otp();
+        $obj->to_mail  = $user['email'];
         $otp = $obj->generate(session()->get('otp_email'), 6, 5);
 
         return redirect()->route('otp')->with('success_msg', "Elektron pochtangiz xabar jo'natildi");

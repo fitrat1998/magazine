@@ -31,4 +31,20 @@
         'journal_ads' => "Jurnalimizga oid e'lonlar",
 
         'journal_archive' => "Jurnallar arxivi",
+
+        'about3_link' => "Saytdagi havolasi: https://turkologiya.samdu.uz",
+        
+        'about3_called' => "Nomlanishi: “Turkologik tadqiqotlar” xalqaro-ilmiy jurnal",
+
+        'about3_lang' => "Tillari: o‘zbek,ingliz, turk",
+
+        'about3_org' => "Muassis: Sharof Rashidov nomidagi Samarqand davlat universiteti",
+
+        'about3_num' => "Nashr boshlanish yili: 2023",
+
+        'about3_count' => "Davomiyligi: yiliga 4 ta son",
+
+        'about3_desc' => "Ixtisosligi (sohalar): Turkiy tillar, Turkiy xalqlarning ijtimoiy-madaniy aloqalari tarixi, Turk dunyosi tadqiqotlari, Dialektologiya, Folklorshunoslik, Qiyosiy tilshunoslik va adabiyotshunoshlik, Adabiy aloqalar va tarjimashunoslik",
+
     ];
+

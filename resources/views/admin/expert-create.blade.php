@@ -23,25 +23,42 @@
                             @csrf
 
                             <div class="form-group col-md-6">
-                                <label>F.I.SH:</label>
-                                <input type="text" class="form-control" name="fio" required placeholder="F.I.SH">
+                                <label>F.I.SH:uz</label>
+                                <input type="text" class="form-control" name="fio" required placeholder="F.I.SH uz">
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label>Ish joyi:</label>
-                                <input type="text" class="form-control" name="ishjoyi" required placeholder="Ish joyi">
+                                <label>F.I.SH:tr</label>
+                                <input type="text" class="form-control" name="fio_tr" required placeholder="F.I.SH tr">
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label>Lavozimi:</label>
-                                <input type="text" class="form-control" name="lavozim" required placeholder="Lavozimi">
+                                <label>F.I.SH:en</label>
+                                <input type="text" class="form-control" name="fio_en" required placeholder="F.I.SH en">
                             </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Malumot:uz</label>
+                                <input type="text" class="form-control" name="malumot_uz"  placeholder="malumotlar uz">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Malumot:tr</label>
+                                <input type="text" class="form-control" name="malumot_tr"  placeholder="malumotlar tr">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Malumot:en</label>
+                                <input type="text" class="form-control" name="malumot_en"  placeholder="malumotlar en">
+                            </div>
+
 
                             <div class="form-group col-md-6">
                                 <label for="image">Surati</label>
                                 <input type="file" name="image"  class="form-control" id="image" required placeholder="Rasm yuklang" accept="image/png, image/jpeg" >
                             </div>
-                            <!-- /.card-body -->
+
+                            
 
                         </form>
 

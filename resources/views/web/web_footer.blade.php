@@ -17,19 +17,19 @@
                 </div>
                 <div class="col-6 col-lg-2 col-md-3">
                     <h6 class="mb-3 text-warning fw-bold">{{ __('home.contact') }}</h6>
-                    <a class="py-1 text-decoration-none d-block w-100 text-white" href="tel:">932360433</a>
-                    <a class="py-1 text-decoration-none d-block w-100 text-white" href="tel:">932360433</a>
-                    <a class="py-1 text-decoration-none d-block w-100 text-white" href="tel:">932360433</a>
+                    <a class="py-1 text-decoration-none d-block w-100 text-white" href="tel:">+998 99 582 93 81</a>
+                    <a class="py-1 text-decoration-none d-block w-100 text-white" href="tel:">+998 91 527 68 22</a>
+                    <a class="py-1 text-decoration-none d-block w-100 text-white" href="tel:">+998 99 596 35 69</a>
                 </div>
                 <div class="col-6 col-lg-4 col-md-3 ps-lg-5">
                     <div class="col-lg-8 col-md-6">
-                        <a href="{{ route('index') }}" class="brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none bg-warning m-1 rounded p-3">
+                        <a href="{{ route('index') }}" class="brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none bg-white m-1 rounded p-3">
                         <img src="{{ asset('assets/img/'. __('home.logo')) }}" class="img-fluid" alt="Turkologiya">
                     </a>
                     </div>
                     <br>
-                    <p>{{ __('home.phone') }}: <a class="py-1 text-decoration-none d-inline w-100 text-white" href="tel:">932360433</a>.</p>
-                    <p>{{ __('home.email') }}: <a class="py-1 text-decoration-none d-inline w-100 text-white" href="email:">hello@lifepc.uz</a>.</p>
+                    <p>{{ __('home.phone') }}: <a class="py-1 text-decoration-none d-inline w-100 text-white" href="tel:">+998 97 911 93 81</a>.</p>
+                    <p>{{ __('home.email') }}: <a class="py-1 text-decoration-none d-inline w-100 text-white" href="https://turkologiya.samdu@gmail.com">turkologiya.samdu@gmail.com</a>.</p>
                     <p>{{ __('home.adress') }}</p>
                 </div>
             </div>
@@ -45,8 +45,8 @@
                 <a class="text-black-50 small mx-3 text-decoration-none" href="{{ route('register') }}">{{ __('home.register') }}</a>
             </div>
             <div class="col-md-4 text-end">
+                <a target="_blank" href="https://t.me/turkologiya1" class="btn social-btn btn-sm text-decoration-none"><i class="icofont-telegram"></i></a>
                 <a target="_blank" href="#" class="btn social-btn btn-sm text-decoration-none"><i class="icofont-facebook"></i></a>
-                <a target="_blank" href="#" class="btn social-btn btn-sm text-decoration-none"><i class="icofont-telegram"></i></a>
                 <a target="_blank" href="#" class="btn social-btn btn-sm text-decoration-none"><i class="icofont-linkedin"></i></a>
                 <a target="_blank" href="#" class="btn social-btn btn-sm text-decoration-none"><i class="icofont-youtube-play"></i></a>
                 <a target="_blank" href="#" class="btn social-btn btn-sm text-decoration-none"><i class="icofont-instagram"></i></a>

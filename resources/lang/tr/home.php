@@ -30,7 +30,7 @@ return [
     'counter_4' => "Kullanıcılar",
     'phone' => "Telefon",
     'email' => "E-posta",
-    'adress' => "Adres: Üniversite Bulvarı 15",
+    'adress' => "Adres:  Semerkand şehri, Üniversite caddesi, 15",
     'logo' => "logo_tr.png",
     'menus' => "Menüler",
     'auth' => "Yetkilendirme ",
@@ -51,5 +51,21 @@ return [
     'otp' => "E-posta adresinize 6 haneli bir kod gönderildi. Kodu almadıysanız lütfen spam klasörünüzü kontrol edin",
     'otp_t' => "6 haneli kodu girin.",
     'abstract' => "Soyut",
+    'position' => "Baş Editör:",
+    'position2' => "Baş Editör Yardımcısı:",
+    'p1' => "Teknik bilimler doktoru, Prof. Dr",
+    'p2' => "Fizik ve matematik bilimleri doktoru, Prof. Dr",
+    'p3' => "– Filoloji bilimleri doktoru, Prof. Dr",
+    'p4' => "Filoloji bilimleri adayı, Prof. Dr",
+    'p5' => "Tarih bilimleri adayı, Doç. Dr",
+    'p6' => "Doç. Dr",
+    'p7' => "Sorumlu Editör:",
+    'p8' => "Teknik Personel:",
+    'country_en' => "(Uzbekistan)",
+    'country_tr' => "(Özbekistan)",
+    'country_uz' => "(O'zbekistan)",
+
+    
+
 
 ];

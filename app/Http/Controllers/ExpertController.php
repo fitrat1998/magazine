@@ -69,8 +69,11 @@ class ExpertController extends Controller
     {
         return request()->validate([
             'fio' => 'required',
-            'lavozim' => 'required',
-            'ishjoyi' => 'required',
+            'fio_tr' => 'required',
+            'fio_en' => 'required',
+            'malumot_uz' => 'required',
+            'malumot_tr' => 'required',
+            'malumot_en' => 'required',
         ],[
             'required' => "Bo'sh maydonlar mavjud, ularni to'ldiring!!!"
         ]);

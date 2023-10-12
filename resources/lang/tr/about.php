@@ -28,5 +28,18 @@ return[
     'journal_ads' => "Dergimiz ile ilgili duyurular",
 
     'journal_archive' => "Dergi arşivleri",
+    'about3_link' => "Web sitesi bağlantısı: https://turkologiya.samdu.uz/",
+        
+    'about3_called' => "İsim: Uluslararasi “Türkoloji araştirmalari” bilimsel dergisi",
+
+    'about3_lang' => "Diller: Özbekçe, İngilizce, Türkçe",
+
+    'about3_org' => "Müessis: Şeraf Reşidov adına Semerkand Devlet Üniversitesi",
+
+    'about3_num' => "Yayın yılı: 2023",
+
+    'about3_count' => "Süre: Yılda 4 sayı",
+
+    'about3_desc' => "Uzmanlık (alanlar): Türk dilleri, türk halklarının sosyo-kültürel ilişkilerinin tarihi, Türk dünyası çalışmaları, Diyalektoloji, Folklor, Karşılaştırmalı dilbilim ve edebiyat çalışmaları, Edebi ilişkiler ve çeviri çalışmaları",
 
 ];

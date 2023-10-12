@@ -24,25 +24,43 @@
                             @method('PUT')
 
                             <div class="form-group col-md-6">
-                                <label>F.I.SH:</label>
+                                <label>F.I.SH:uz</label>
                                 <input type="text" class="form-control" name="fio" required placeholder="F.I.SH" value="{{ $expert->fio }}">
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label>Ish joyi:</label>
-                                <input type="text" class="form-control" name="ishjoyi" required placeholder="Ish joyi" value="{{ $expert->ishjoyi }}">
+                                <label>F.I.SH:tr</label>
+                                <input type="text" class="form-control" name="fio_tr" required placeholder="F.I.SH" value="{{ $expert->fio_tr }}">
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label>Lavozimi:</label>
-                                <input type="text" class="form-control" name="lavozim" required placeholder="Lavozimi" value="{{ $expert->lavozim }}">
+                                <label>F.I.SH:en</label>
+                                <input type="text" class="form-control" name="fio_en" required placeholder="F.I.SH" value="{{ $expert->fio_en }}">
                             </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label>Malumotlar:uz</label>
+                                <input type="text" class="form-control" name="malumot_uz" required placeholder="malumot uz" value="{{ $expert->malumot_uz }}">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Malumotlar:tr</label>
+                                <input type="text" class="form-control" name="malumot_tr" required placeholder="malumot tr" value="{{ $expert->malumot_tr }}">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Malumotlar:en</label>
+                                <input type="text" class="form-control" name="malumot_en" required placeholder="malumot en" value="{{ $expert->malumot_en }}">
+                            </div>
+
 
                             <div class="form-group col-md-6">
                                 <label for="image">Surati</label>
                                 <input type="file" name="image"  class="form-control" id="image" placeholder="Rasm yuklang" accept="image/png, image/jpeg" >
                             </div>
-                            <!-- /.card-body -->
+
+                         
 
                         </form>
 

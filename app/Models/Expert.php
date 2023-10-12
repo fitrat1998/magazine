@@ -11,8 +11,11 @@ class Expert extends Model
 
     protected $fillable=[
         'fio',
+        'fio_tr',
+        'fio_en',
         'image',
-        'lavozim',
-        'ishjoyi',
+        'malumot_uz',
+        'malumot_tr',
+        'malumot_en',
     ];
 }
